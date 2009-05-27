@@ -1,12 +1,12 @@
 ---
 name: MusicBrainz-DiscID
-version: 0.01
+version: 0.02
 author:
   - 'Nicholas J. Humfrey <njh@aelius.com>'
 abstract: Perl interface for the MusicBrainz libdiscid library
 license: gpl
 resources:
-  license: ~
+  license: http://www.opensource.org/licenses/gpl-license.php
 requires:
   Test: 1.00
   Test::More: 0
@@ -17,8 +17,8 @@ recommends:
 provides:
   MusicBrainz::DiscID:
     file: lib/MusicBrainz/DiscID.pm
-    version: 0.01
-generated_by: Module::Build version 0.31
+    version: 0.02
+generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
