@@ -14,7 +14,7 @@ use strict;
 
 use vars qw/$VERSION/;
 
-$VERSION="0.02";
+$VERSION="0.03";
 
 XSLoader::load('MusicBrainz::DiscID', $VERSION);
 
@@ -131,12 +131,12 @@ MusicBrainz::DiscID - Perl interface for the MusicBrainz libdiscid library
 
   use MusicBrainz::DiscID;
 
-  my $discid = new MusicBrainz::DiscID();
+  my $discid = MusicBrainz::DiscID->new();
   if ( $disc->read() == 0 ) {
-      printf STDERR "Error: %s\n", $disc->error_msg();
+      print STDERR "Error: " . $discid->error_msg() . "\n";
       exit(1);
   }
-  printf("DiscID: %s\n", $disc->id());
+  print "DiscID: " . $discid->id() . "\n";
 
 =head1 DESCRIPTION
 
